@@ -20,26 +20,26 @@ import './Content.css'
 export function Content () {
     return (
         <>
-            <section className='content justify-center gap-[40px] bg-[#FAFAFA] rounded-[10px] mx-[128px] p-[40px]'>
-                <div className='h-[591px]'>
-                    <img className='w-[575px] h-[591px]' src={ ImageClarifion } alt="image_clarifion" />
+            <section className='content flex flex-col md:grid justify-center gap-[24px] md:gap-[40px] bg-white md:bg-[#FAFAFA] rounded-[10px] md:mx-[128px] md:p-[40px] md:mb-[60px]'>
+                <div className='md:h-[591px]'>
+                    <img className='md:w-[575px] md:h-[591px]' src={ ImageClarifion } alt="image_clarifion" />
                 </div>
-                <div className='flex flex-col w-[550px] gap-[32px]'>
+                <div className='flex flex-col md:w-[550px] gap-[24px] md:gap-[32px]'>
                     <div>
-                        <h2 className='title'><span className='blue'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className='blue'>$14 each</span> ($84.00 total!)</h2>
+                        <h2 className='title text-[24px] md:text-[32px]'><span className='blue text-[24px] md:text-[32px]'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className='blue text-[24px] md:text-[32px]'>$14 each</span> ($84.00 total!)</h2>
                     </div>
-                    <div className='flex gap-[24px]'>
-                        <div className='w-[134px] h-[134px] bg-blue-500 rounded-[10px]'>
+                    <div className='flex gap-[16px] md:gap-[24px]'>
+                        <div className='flex items-center w-[80px] h-[80px] md:w-[134px] md:h-[134px] bg-blue-500 rounded-[10px]'>
                             <img src={ ImageClarifion2 } alt="image_clarifion_2" />
                         </div>
-                        <div className='flex flex-col gap-[15px] w-[392px]'>
-                            <div className='grid grid-cols-2 items-center'>
+                        <div className='flex flex-col gap-[10px] md:gap-[15px] w-[392px]'>
+                            <div className='grid grid-cols-2 grid-rows-1 items-center'>
+                                <div className='flex items-center'>
+                                    <h3 className='product_name text-[14px] md:text-[20px]'>Clarifion Air Ionizer</h3>
+                                </div>
                                 <div className='flex justify-end items-center gap-[10px]'>
                                     <span className='price_strike'>$180</span>
                                     <span className='price'>$84</span>
-                                </div>
-                                <div>
-                                    <h3 className='product_name'>Clarifion Air Ionizer</h3>
                                 </div>
                             </div>
                             <div className='flex'>
@@ -70,19 +70,19 @@ export function Content () {
                     </div>
                     <div className='flex flex-col gap-[16px]'>
                         <div className='flex gap-[12px]'>
-                            <img src={ CheckBlue } alt="check_blue" />
-                            <span>Negative Ion Technology may <strong>help with allergens</strong></span>
+                            <img className='w-[16px] h-[16px] md:w-[22px] md:h-[22px]' src={ CheckBlue } alt="check_blue" />
+                            <span className='text-[12px] md:text-[16px]'>Negative Ion Technology may <strong>help with allergens</strong></span>
                         </div>
                         <div className='flex gap-[12px]'>
-                            <img src={ CheckBlue } alt="check_blue" />
-                            <span>Designed for <strong>air rejuvenation</strong></span>
+                            <img className='w-[16px] h-[16px] md:w-[22px] md:h-[22px]' src={ CheckBlue } alt="check_blue" />
+                            <span className='text-[12px] md:text-[16px]'>Designed for <strong>air rejuvenation</strong></span>
                         </div>
                         <div className='flex gap-[12px]'>
-                            <img src={ CheckBlue } alt="check_blue" />
-                            <span><strong>Perfect for every room</strong> in all types of places</span>
+                            <img className='w-[16px] h-[16px] md:w-[22px] md:h-[22px]' src={ CheckBlue } alt="check_blue" />
+                            <span className='text-[12px] md:text-[16px]'><strong>Perfect for every room</strong> in all types of places</span>
                         </div>
                     </div>
-                    <div className='w-[542px] h-[56px] bg-blue-100 py-[12px] px-[16px] rounded-[10px]'>
+                    <div className='md:w-[542px] h-[56px] bg-blue-100 py-[12px] px-[16px] rounded-[10px]'>
                         <div className='flex items-center gap-[16px]'>
                             <img src={ Percentage } alt="percentage" />
                             <p className='saving'>Save <span className='lightblue'>53%</span> and get <span className='lightblue'>6 extra Clarifision</span> for only <span className='lightblue'>$14 Each</span>.</p>
@@ -90,16 +90,19 @@ export function Content () {
                     </div>
                     <div className='flex gap-[12px]'>
                         <div className='flex gap-[19.76px] justify-center items-center w-[542px] h-[59px] px-[64px] py-[16px] rounded-[50px] bg-[#59AE43] cursor-pointer'>
-                            <p className='text_button'>Yes - Claim my discount</p>
-                            <img className='w-[18px] h-[18px]' src={ Arrow } alt="arrow" />
+                            <p className='text_button text-[14px] md:text-[20px]'>Yes - Claim my discount</p>
+                            <img className='w-[12px] h-[12px] md:w-[18px] md:h-[18px]' src={ Arrow } alt="arrow" />
                         </div>
                     </div>
-                    <div className='flex justify-center items-center gap-[16px] w-[542px] h-[32px] px-[16px] py-[18px] border-[1px] border-[#CFCFCF] rounded-[4px]'>
-                        <span className='free'>Free Shipping</span>
-                        <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px]'></div>
-                        <img className='w-[12px] h-[12px]' src={ Lock } alt="lock" />
-                        <span className='secure'>Secure 256-bit SSL encryption.</span>
-                        <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px]'></div>
+                    <div className='flex flex-col md:flex-row justify-center items-center gap-[10px] md:gap-[16px] md:w-[542px] h-[71px] md:h-[32px] px-[16px] py-[8px] border-[1px] border-[#CFCFCF] rounded-[4px]'>
+                        <div className='flex items-center gap-[8px] md:gap-[12px]'>
+                            <span className='free'>Free Shipping</span>
+                            <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px]'></div>
+                            <img className='w-[12px] h-[12px]' src={ Lock } alt="lock" />
+                            <span className='secure'>Secure 256-bit SSL encryption</span>
+                            <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px] hidden md:block'></div>
+                        </div>
+                        <hr className="border-[1px] border-[#CFCFCF] w-[289px] block md:hidden" />
                         <div className='flex'>
                             <img src={ Visa } alt="visa" />
                             <img src={ ShopPay } alt="shop_pay" />
@@ -111,14 +114,14 @@ export function Content () {
                         </div>
                     </div>
                     <div className='text-center'>
-                        <span className='dont_want'>No thanks, I don’t want this.</span>
+                        <span className='dont_want text-[12px] md:text-[18px]'>No thanks, I don’t want this.</span>
                     </div>
                     <div className='flex gap-[16px]'>
-                        <img className='w-[88px] h-[88px]' src={ Guarantee } alt="guarantee" />
-                        <p className='text_guarantee'>If you are not completely thrilled with your Clarifion - We have a <strong>30 day satisfaction guarantee</strong>. Please refer to our return policy at the bottom of the page for more details. Happy Shopping!</p>
+                        <img className='w-[48px] h-[48px] md:w-[88px] md:h-[88px]' src={ Guarantee } alt="guarantee" />
+                        <p className='text_guarantee text-[12px] md:text-[16px]'>If you are not completely thrilled with your Clarifion - We have a <strong>30 day satisfaction guarantee</strong>. Please refer to our return policy at the bottom of the page for more details. Happy Shopping!</p>
                     </div>
                 </div>
-                <div className='flex flex-col gap-[18px] p-[24px]'>
+                <div className='md:flex flex-col gap-[18px] p-[24px] hidden md:visible'>
                     <div className='flex items-center gap-[13px]'>
                         <img className='w-[48px] h-[48px]' src={ VerifiedCustomer } alt="verified_customer" />
                         <div className='flex flex-col gap-[7.35px]'>

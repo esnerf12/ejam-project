@@ -1,7 +1,6 @@
 .copyright {
     color: #FFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
@@ -11,17 +10,15 @@
 .support {
     color: #FFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
     text-transform: lowercase;
 }
 
-.secure {
+.secure-footer {
     color: #FFF;
     font-family: 'Manrope', sans-serif;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
