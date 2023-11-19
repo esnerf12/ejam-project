@@ -28,7 +28,7 @@ export function Content () {
                     <div>
                         <h2 className='title text-[24px] md:text-[32px]'><span className='blue text-[24px] md:text-[32px]'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className='blue text-[24px] md:text-[32px]'>$14 each</span> ($84.00 total!)</h2>
                     </div>
-                    <div className='flex gap-[16px] md:gap-[24px]'>
+                    <div className='flex items-center gap-[16px] md:gap-[24px]'>
                         <div className='flex items-center w-[80px] h-[80px] md:w-[134px] md:h-[134px] bg-blue-500 rounded-[10px]'>
                             <img src={ ImageClarifion2 } alt="image_clarifion_2" />
                         </div>
@@ -64,9 +64,12 @@ export function Content () {
                                 <span className='stock'>12 left in Stock</span>
                             </div>
                             <div>
-                                <p className='description'>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
+                                <p className='description hidden md:block'>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <p className='description text-center block md:hidden'>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</p>
                     </div>
                     <div className='flex flex-col gap-[16px]'>
                         <div className='flex gap-[12px]'>
@@ -82,14 +85,14 @@ export function Content () {
                             <span className='text-[12px] md:text-[16px]'><strong>Perfect for every room</strong> in all types of places</span>
                         </div>
                     </div>
-                    <div className='md:w-[542px] h-[56px] bg-blue-100 py-[12px] px-[16px] rounded-[10px]'>
+                    <div className='h-[64px] md:w-[542px] md:h-[56px] bg-blue-100 py-[12px] px-[16px] rounded-[10px]'>
                         <div className='flex items-center gap-[16px]'>
                             <img src={ Percentage } alt="percentage" />
-                            <p className='saving'>Save <span className='lightblue'>53%</span> and get <span className='lightblue'>6 extra Clarifision</span> for only <span className='lightblue'>$14 Each</span>.</p>
+                            <p className='saving text-[14px] md:text-[16px]'>Save <span className='lightblue'>53%</span> and get <span className='lightblue'>6 extra Clarifision</span> for only <span className='lightblue'>$14 Each</span>.</p>
                         </div>
                     </div>
                     <div className='flex gap-[12px]'>
-                        <div className='flex gap-[19.76px] justify-center items-center w-[542px] h-[59px] px-[64px] py-[16px] rounded-[50px] bg-[#59AE43] cursor-pointer'>
+                        <div className='flex gap-[19.76px] justify-center items-center w-[542px] h-[59px] px-[44px] py-[16px] rounded-[50px] bg-[#59AE43] cursor-pointer'>
                             <p className='text_button text-[14px] md:text-[20px]'>Yes - Claim my discount</p>
                             <img className='w-[12px] h-[12px] md:w-[18px] md:h-[18px]' src={ Arrow } alt="arrow" />
                         </div>

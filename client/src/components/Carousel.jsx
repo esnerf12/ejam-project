@@ -16,8 +16,8 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="carousel">
-      <div className='carousel flex gap-[28px] justify-center text-center items-center h-[42px] px-[20px] py-[10px] bg-[#252F3D]'>
+    <div>
+      <div className='carousel justify-center text-center items-center h-[42px] px-[20px] py-[10px] bg-[#252F3D]'>
         <div className='flex justify-start'>
           <button onClick={handlePrevious}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
