@@ -97,15 +97,15 @@ export function Content () {
                             <img className='w-[12px] h-[12px] md:w-[18px] md:h-[18px]' src={ Arrow } alt="arrow" />
                         </div>
                     </div>
-                    <div className='flex flex-col md:flex-row justify-center items-center gap-[10px] md:gap-[16px] md:w-[542px] h-[71px] md:h-[32px] px-[16px] py-[8px] border-[1px] border-[#CFCFCF] rounded-[4px]'>
+                    <div className='flex flex-col md:flex-row md:justify-center items-center gap-[10px] md:gap-[16px] md:w-[542px] h-[71px] md:h-[32px] px-[16px] py-[8px] border-[1px] border-[#CFCFCF] rounded-[4px]'>
                         <div className='flex items-center gap-[8px] md:gap-[12px]'>
-                            <span className='free'>Free Shipping</span>
+                            <span className='free text-[10px] md:text-[12px]'>Free Shipping</span>
                             <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px]'></div>
                             <img className='w-[12px] h-[12px]' src={ Lock } alt="lock" />
-                            <span className='secure'>Secure 256-bit SSL encryption</span>
+                            <span className='secure text-[10px] md:text-[12px]'>Secure 256-bit SSL encryption</span>
                             <div className='border-[1px] border-[#CFCFCF] w-[1px] h-[16px] hidden md:block'></div>
                         </div>
-                        <hr className="border-[1px] border-[#CFCFCF] w-[289px] block md:hidden" />
+                        <hr className="border-[1px] border-[#CFCFCF] w-full block md:hidden" />
                         <div className='flex'>
                             <img src={ Visa } alt="visa" />
                             <img src={ ShopPay } alt="shop_pay" />
